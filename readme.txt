@@ -7,6 +7,8 @@ Multiple accounts can be managed at the same time!
 dynamicaaly keeps track of stocks present in the user's portfolio and updates it whenever the program has been sommoned!
 The program also shows the user TopGainers and Toplosers and live updates from the stock market!
 
+This program works only for EQUITY trading!
+
 
 
 
