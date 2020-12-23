@@ -69,7 +69,7 @@ def sell_trade(x):
 		else:
 			remaining_quan = existing_quan - stock_sell_quan
 			Money_return = stock_sell_quan*stock_sell_price
-			Money_return = Money_return - ((1/100)*Money_return)
+			Money_return = Money_return - ((0.35/100)*Money_return)
 			flag8 = False
 			continue
 	cur1.execute('SELECT Amount_Invested FROM Portfolio WHERE StockName = ?',(stock_name,))
@@ -287,7 +287,7 @@ def update_portfolio():
 			hypo_money = hypo_price * hypo_quan
 
 
-		hypo_money = hypo_money - ((1/100)*hypo_money)
+		hypo_money = hypo_money - ((0.35/100)*hypo_money)
 		hypo_profit = hypo_money - actaul_price
 
 		cur1.execute('UPDATE Portfolio SET Current_live_Price = ? WHERE StockName = ?',(hypo_price,name))
